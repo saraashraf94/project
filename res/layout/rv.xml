@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+card_view:cardUseCompatPadding="true"
+card_view:cardCornerRadius="8dp"
+card_view:cardBackgroundColor="@android:color/transparent"
+
+card_view:cardElevation="20dp"
+android:layout_marginBottom="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingBottom="4dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:textColor="@color/colorPrimaryDark"
+
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nameview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_alignEnd="@+id/pTime"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/pTime"
+            android:text="Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        ></LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pFrom"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/deleteBtn"
+        android:layout_toEndOf="@+id/pdate"
+        android:layout_toRightOf="@+id/pdate"
+        android:text="From"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pFrom"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/pTime"
+        android:layout_toRightOf="@+id/pTime"
+        android:text="To"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/pdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Date"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/pTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/deleteBtn"
+
+    android:layout_width="50dp"
+    android:layout_height="60dp"
+    android:src="@drawable/basket"
+    android:layout_marginLeft="280dp"
+
+    />
+
+
+
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

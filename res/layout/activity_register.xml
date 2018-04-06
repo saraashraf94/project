@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rizk.firebaseexamplelogin.Register">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="49dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Email" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/lName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:hint="First Name"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="First Name" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/pwd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Last Name"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Last Name" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rePwd"
+        android:layout_alignParentStart="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Password" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/rePwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnReg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Retype Password" />
+
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_colorComplete="@color/green_complete"
+        app:pb_colorError="@color/red_error"
+        app:pb_colorNormal="@color/blue_normal"
+        app:pb_colorPressed="@color/blue_pressed"
+        app:pb_colorProgress="@color/purple_progress"
+        app:pb_cornerRadius="20dp"
+        app:pb_textComplete="Success"
+        app:pb_textError="Error"
+        app:pb_textProgress="Loading" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp" />
+</RelativeLayout>
